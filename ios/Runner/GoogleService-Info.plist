@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>601534575663-mcp6gmgoo2mdlhlbgicrs92ef42n82cr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.601534575663-mcp6gmgoo2mdlhlbgicrs92ef42n82cr</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD8M9-mEsUFhu8FCc7-2ufET7_fQ11narQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>601534575663</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.ShishaOase</string>
+	<key>PROJECT_ID</key>
+	<string>shishabar-f9ce4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>shishabar-f9ce4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:601534575663:ios:9fdf7ea7c6bb6a437282da</string>
+	<key>DATABASE_URL</key>
+	<string>https://shishabar-f9ce4.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,3 @@
+class CashRegister {
+  int balance;
+}
