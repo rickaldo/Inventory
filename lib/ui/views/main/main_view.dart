@@ -18,8 +18,10 @@ class MainView extends StatelessWidget {
       ) =>
           Scaffold(
         appBar: AppBar(
-          title: Text(
-            "Welcome to ShishaOase",
+          title: FittedBox(
+            child: Text(
+              "Willkommen in Rick's ShishaOase!",
+            ),
           ),
           actions: [
             Padding(
@@ -27,7 +29,7 @@ class MainView extends StatelessWidget {
               child: RaisedButton(
                 onPressed: () => model.logOut(),
                 child: Text(
-                  "LogOut",
+                  "Haide Yallah",
                 ),
               ),
             ),

@@ -5,6 +5,8 @@ import 'package:stacked/stacked.dart';
 import 'home_viewmodel.dart';
 
 class HomeView extends StatelessWidget {
+  
+
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder<HomeViewModel>.reactive(
@@ -23,7 +25,9 @@ class HomeView extends StatelessWidget {
           Text("Shalom Shalom"),
           Center(
             child: Text(
-              model.user.balance.toString(),
+              "Dein Konto : " +
+                  model.user.balance.toString() +
+                  "€ eingezahlt.",
             ),
           ),
         ],
