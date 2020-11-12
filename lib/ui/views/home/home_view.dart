@@ -5,7 +5,8 @@ import 'package:stacked/stacked.dart';
 import 'home_viewmodel.dart';
 
 class HomeView extends StatelessWidget {
-  
+  //TODO: Shishakassegeld erhögen, amount und user loggen
+//TODO: Generelle Ansicht der Homeview Überdenken
 
   @override
   Widget build(BuildContext context) {
@@ -25,9 +26,9 @@ class HomeView extends StatelessWidget {
           Text("Shalom Shalom"),
           Center(
             child: Text(
-              "Dein Konto : " +
-                  model.user.balance.toString() +
-                  "€ eingezahlt.",
+              "In der Kasse befinden sich: " +
+                  model.kasse.amount.toString() +
+                  "€",
             ),
           ),
         ],

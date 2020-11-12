@@ -1,10 +1,7 @@
 import 'dart:io';
 
-import 'package:ShishaOase/app/constants.dart';
 import 'package:ShishaOase/services/app_service.dart';
-import 'package:ShishaOase/services/authentication_service.dart';
 import 'package:ShishaOase/services/imagepicker_service.dart';
-import 'package:ShishaOase/ui/views/home/home_view.dart';
 
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
@@ -13,8 +10,6 @@ import '../../../services/navigation_service.dart';
 
 class AddDrinkViewModel extends BaseViewModel {
   final NavigationService _navigationService = locator<NavigationService>();
-  final AuthenticationService _authenticationService =
-      locator<AuthenticationService>();
   final ImagePickerService _imagePickerService = locator<ImagePickerService>();
   final AppService _appService = locator<AppService>();
 

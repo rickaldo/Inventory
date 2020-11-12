@@ -1,4 +1,5 @@
 import 'package:ShishaOase/app/locator.dart';
+import 'package:ShishaOase/models/shishakasse.dart';
 import 'package:ShishaOase/models/user.dart';
 import 'package:ShishaOase/services/app_service.dart';
 import 'package:ShishaOase/services/authentication_service.dart';
@@ -12,6 +13,9 @@ class HomeViewModel extends FutureViewModel {
   User _user;
   User get user => _user;
 
+  Shishakasse _kasse;
+  Shishakasse get kasse => _kasse;
+
   HomeViewModel() {
     _appService.addListener(init);
   }
@@ -20,6 +24,7 @@ class HomeViewModel extends FutureViewModel {
     setBusy(true);
     if (_authenticationService.isUserLoggedIn()) {
       _user = _appService.getUser[0];
+      _kasse = _appService.getShishaKasse[0];
     }
     notifyListeners();
     setBusy(false);

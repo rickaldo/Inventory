@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:ShishaOase/models/drink.dart';
+import 'package:ShishaOase/models/shishakasse.dart';
 import 'package:ShishaOase/models/tobacco.dart';
 import 'package:ShishaOase/models/user.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -28,6 +29,14 @@ class FirestoreService {
   Stream<List<Drink>> getDrinkList() {
     return firestore.collection("drink").snapshots().map((snapShot) =>
         snapShot.docs.map((doc) => Drink.fromData(doc.data())).toList());
+  }
+
+  Stream<Shishakasse> getShishakasse() {
+    return firestore
+        .collection('shishakasse')
+        .doc('kasse')
+        .snapshots()
+        .map((event) => Shishakasse.fromData(event.data()));
   }
 
   addUser(String username, String email, double balance) {

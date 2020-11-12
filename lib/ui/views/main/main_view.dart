@@ -2,7 +2,6 @@ import 'package:ShishaOase/ui/views/drinklist/drink_view.dart';
 import 'package:ShishaOase/ui/views/home/home_view.dart';
 import 'package:ShishaOase/ui/views/main/main_viewmodel.dart';
 import 'package:ShishaOase/ui/views/tabakliste/tabak_view.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 

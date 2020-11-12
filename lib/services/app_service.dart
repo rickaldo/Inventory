@@ -1,7 +1,6 @@
-import 'dart:io';
-
 import 'package:ShishaOase/app/locator.dart';
 import 'package:ShishaOase/models/drink.dart';
+import 'package:ShishaOase/models/shishakasse.dart';
 import 'package:ShishaOase/models/tobacco.dart';
 import 'package:ShishaOase/models/user.dart';
 import 'package:ShishaOase/services/authentication_service.dart';
@@ -26,6 +25,9 @@ class AppService with ReactiveServiceMixin {
   List<Drink> _drinkList = List();
   List<Drink> get getDrinkList => _drinkList;
 
+  List<Shishakasse> _kasseList = List();
+  List<Shishakasse> get getShishaKasse => _kasseList;
+
   Future<AppService> initStream() async {
     _fireStoreService
         .activateChangeListener(_authenticationService.getUsersMail())
@@ -44,6 +46,12 @@ class AppService with ReactiveServiceMixin {
     _fireStoreService.getDrinkList().listen((drink) {
       _drinkList.clear();
       _drinkList.addAll(drink);
+      notifyListeners();
+    });
+
+    _fireStoreService.getShishakasse().listen((shishakasse) {
+      _kasseList.clear();
+      _kasseList.add(shishakasse);
       notifyListeners();
     });
 
