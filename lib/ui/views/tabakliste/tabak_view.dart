@@ -15,7 +15,9 @@ class TabakView extends StatelessWidget {
       initialiseSpecialViewModelsOnce: true,
       builder: (context, model, child) => Center(
         child: Text(
-          "Tabakliste",
+          model.getTobacco.isEmpty
+              ? "Geh Tabak kaufen du Mongo"
+              : model.getTobacco.first.name,
         ),
       ),
       viewModelBuilder: () => locator<TabakViewModel>(),

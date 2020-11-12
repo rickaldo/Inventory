@@ -2,16 +2,14 @@ import 'package:ShishaOase/app/locator.dart';
 import 'package:ShishaOase/models/user.dart';
 import 'package:ShishaOase/services/app_service.dart';
 import 'package:ShishaOase/services/authentication_service.dart';
-import 'package:ShishaOase/services/firestore_service.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:stacked/stacked.dart';
 
 class HomeViewModel extends FutureViewModel {
   final AppService _appService = locator<AppService>();
   final AuthenticationService _authenticationService =
       locator<AuthenticationService>();
-  User _user;
 
+  User _user;
   User get user => _user;
 
   HomeViewModel() {
@@ -20,7 +18,6 @@ class HomeViewModel extends FutureViewModel {
 
   void init() {
     setBusy(true);
-    print(_authenticationService.isUserLoggedIn());
     if (_authenticationService.isUserLoggedIn()) {
       _user = _appService.getUser[0];
     }

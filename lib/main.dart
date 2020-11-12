@@ -1,16 +1,11 @@
 import 'package:ShishaOase/app/locator.dart';
-import 'package:ShishaOase/services/app_service.dart';
 import 'package:ShishaOase/services/authentication_service.dart';
 import 'package:ShishaOase/services/navigation_service.dart';
-import 'package:ShishaOase/ui/views/home/home_view.dart';
-import 'package:ShishaOase/ui/views/home/home_viewmodel.dart';
-import 'package:ShishaOase/ui/views/logIn/login_view.dart';
 import 'package:ShishaOase/ui/views/main/main_view.dart';
 import 'package:ShishaOase/ui/views/signIn/signin_view.dart';
 
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:get_it/get_it.dart';
 import 'app/router.dart' as router;
 
 void main() async {

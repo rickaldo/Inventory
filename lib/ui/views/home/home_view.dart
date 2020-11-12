@@ -1,5 +1,4 @@
 import 'package:ShishaOase/app/locator.dart';
-import 'package:ShishaOase/models/user.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
@@ -21,9 +20,10 @@ class HomeView extends StatelessWidget {
           Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Text("Shalom Shalom"),
           Center(
             child: Text(
-              model.user == null ? "0" : model.user.balance.toString(),
+              model.user.balance.toString(),
             ),
           ),
         ],

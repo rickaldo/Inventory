@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:ShishaOase/models/drink.dart';
+import 'package:ShishaOase/models/tobacco.dart';
 import 'package:ShishaOase/models/user.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -18,29 +20,15 @@ class FirestoreService {
             snapShot.docs.map((doc) => User.fromData(doc.data())).toList());
   }
 
-  // final StreamController<List<User>> _userController =
-  //     StreamController<List<User>>();
+  Stream<List<Tobacco>> getTobaccoList() {
+    return firestore.collection("tobacco").snapshots().map((snapShot) =>
+        snapShot.docs.map((doc) => Tobacco.fromData(doc.data())).toList());
+  }
 
-  // Stream<List<User>> get user => _userController.stream;
-
-  // void _userAdded(QuerySnapshot snapShot) {
-  //   var user = _getUserFromSnapshot(snapShot);
-  //   _userController.add(user);
-  // }
-
-  // List<User> _getUserFromSnapshot(QuerySnapshot snapShot) {
-  //   var userItems = List<User>();
-  //   var documents = snapShot.docs;
-  //   var hasDocuments = documents.length > 0;
-
-  //   if (hasDocuments) {
-  //     for (var document in documents) {
-  //       userItems.add(User.fromData(document.data()));
-  //     }
-  //   }
-
-  //   return userItems;
-  // }
+  Stream<List<Drink>> getDrinkList() {
+    return firestore.collection("drink").snapshots().map((snapShot) =>
+        snapShot.docs.map((doc) => Drink.fromData(doc.data())).toList());
+  }
 
   addUser(String username, String email, double balance) {
     CollectionReference users = firestore.collection('users');

@@ -7,8 +7,6 @@ import 'package:stacked_services/stacked_services.dart';
 import '../../../app/locator.dart';
 import '../../../services/navigation_service.dart' as nav;
 
-import '../../../models/user.dart';
-
 class SignInViewModel extends BaseViewModel {
   final nav.NavigationService _navigationService =
       locator<nav.NavigationService>();

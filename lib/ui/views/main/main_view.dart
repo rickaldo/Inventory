@@ -2,10 +2,12 @@ import 'package:ShishaOase/ui/views/drinklist/drink_view.dart';
 import 'package:ShishaOase/ui/views/home/home_view.dart';
 import 'package:ShishaOase/ui/views/main/main_viewmodel.dart';
 import 'package:ShishaOase/ui/views/tabakliste/tabak_view.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
 class MainView extends StatelessWidget {
+  const MainView({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder.reactive(
@@ -36,12 +38,12 @@ class MainView extends StatelessWidget {
           onTap: model.setIndex,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.storage),
-              label: "Tabakvorrat",
-            ),
-            BottomNavigationBarItem(
               icon: Icon(Icons.home),
               label: "Home",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.storage),
+              label: "Tabakvorrat",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.local_drink),
@@ -58,9 +60,9 @@ class MainView extends StatelessWidget {
   Widget getViewForIndex(int index) {
     switch (index) {
       case 0:
-        return TabakView();
-      case 1:
         return HomeView();
+      case 1:
+        return TabakView();
       case 2:
         return DrinkView();
       default:
