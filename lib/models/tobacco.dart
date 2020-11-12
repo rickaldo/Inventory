@@ -18,4 +18,5 @@ class Tobacco {
   String get getDocId => this.docID;
   int get getAmount => this.amount;
   bool get getNearEmpty => this.nearEmpty;
+  String get getUrl => this.url;
 }

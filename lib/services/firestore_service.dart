@@ -55,12 +55,34 @@ class FirestoreService {
     }).catchError((error) => "Failed to add Tobacco");
   }
 
+  addDrink(String name, int amount, String filepath) {
+    CollectionReference drink = firestore.collection("drink");
+    drink.add({
+      'name': name,
+      'amount': amount,
+      'nearEmpty': false,
+      'filepath': filepath,
+      'docID': ''
+    }).then((doc) {
+      doc.update({'docID': doc.id});
+    }).catchError((error) => "Failed to add Tobacco");
+  }
+
   deleteTobacco(String docId, int amount) {
     CollectionReference tobacco = firestore.collection("tobacco");
     if (amount == 0) {
       tobacco.doc(docId).delete();
     } else {
       tobacco.doc(docId).update({'amount': amount});
+    }
+  }
+
+  deleteDrink(String docId, int amount) {
+    CollectionReference drink = firestore.collection("drink");
+    if (amount == 0) {
+      drink.doc(docId).delete();
+    } else {
+      drink.doc(docId).update({'amount': amount});
     }
   }
 }

@@ -62,4 +62,9 @@ class AppService with ReactiveServiceMixin {
     String downloadLink = await _fireStorageService.uploadPicture(filepath);
     _fireStoreService.addTobacco(name, amount, downloadLink);
   }
+
+  uploadNewDrink(String name, int amount, String filepath) async {
+    String downloadLink = await _fireStorageService.uploadPicture(filepath);
+    _fireStoreService.addDrink(name, amount, downloadLink);
+  }
 }

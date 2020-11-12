@@ -49,48 +49,50 @@ class TabakView extends StatelessWidget {
                   children: [
                     Flexible(
                       fit: FlexFit.tight,
-                      child: Image.network(model.getTobacco[index].url),
+                      child: Image.network(model.getTobacco[index].getUrl),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        IconButton(
-                          icon: Icon(Icons.arrow_upward),
-                          onPressed: () => model.updateTabacco(
-                            model.getTobacco[index],
-                            1,
+                    FittedBox(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          IconButton(
+                            icon: Icon(Icons.arrow_upward),
+                            onPressed: () => model.updateTabacco(
+                              model.getTobacco[index],
+                              1,
+                            ),
+                            color: Colors.lime,
                           ),
-                          color: Colors.lime,
-                        ),
-                        Column(
-                          children: [
-                            Text(
-                              model.getTobacco[index].name.toUpperCase(),
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
+                          Column(
+                            children: [
+                              Text(
+                                model.getTobacco[index].name.toUpperCase(),
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(2),
-                            ),
-                            Text(
-                              "Dosen: " +
-                                  model.getTobacco[index].amount.toString(),
-                              textAlign: TextAlign.center,
-                            ),
-                          ],
-                        ),
-                        IconButton(
-                          icon: Icon(Icons.arrow_downward),
-                          onPressed: () => model.updateTabacco(
-                            model.getTobacco[index],
-                            -1,
+                              Padding(
+                                padding: EdgeInsets.all(2),
+                              ),
+                              Text(
+                                "Dosen: " +
+                                    model.getTobacco[index].amount.toString(),
+                                textAlign: TextAlign.center,
+                              ),
+                            ],
                           ),
-                          color: Colors.red,
-                        ),
-                      ],
-                    )
+                          IconButton(
+                            icon: Icon(Icons.arrow_downward),
+                            onPressed: () => model.updateTabacco(
+                              model.getTobacco[index],
+                              -1,
+                            ),
+                            color: Colors.red,
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
