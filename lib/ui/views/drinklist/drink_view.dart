@@ -13,10 +13,11 @@ class DrinkView extends StatelessWidget {
       disposeViewModel: false,
       // Inidicate that we only want to initialise a specialty viewmodel once
       initialiseSpecialViewModelsOnce: true,
+      onModelReady: (model) => model.init(),
       builder: (context, model, child) => Center(
         child: Text(
           model.getDrink.isEmpty
-              ? "Kauf doch mal was zu trinken du Spast"
+              ? "Kauf Getränke du Mongo"
               : model.getDrink.first.name,
         ),
       ),

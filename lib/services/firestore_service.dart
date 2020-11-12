@@ -41,4 +41,26 @@ class FirestoreService {
         .then((value) => print("User Added"))
         .catchError((error) => "Failed to add User");
   }
+
+  addTobacco(String name, int amount, String filepath) {
+    CollectionReference tobacco = firestore.collection("tobacco");
+    tobacco.add({
+      'name': name,
+      'amount': amount,
+      'nearEmpty': false,
+      'filepath': filepath,
+      'docID': ''
+    }).then((doc) {
+      doc.update({'docID': doc.id});
+    }).catchError((error) => "Failed to add Tobacco");
+  }
+
+  deleteTobacco(String docId, int amount) {
+    CollectionReference tobacco = firestore.collection("tobacco");
+    if (amount == 0) {
+      tobacco.doc(docId).delete();
+    } else {
+      tobacco.doc(docId).update({'amount': amount});
+    }
+  }
 }

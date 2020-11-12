@@ -21,7 +21,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        buttonTheme: ButtonThemeData(
+          buttonColor: const Color(0xFF64ffda),
+          textTheme: ButtonTextTheme.primary,
+        ),
+        brightness: Brightness.dark,
         primarySwatch: Colors.blue,
+        primaryColor: const Color(0xFF212121),
+        accentColor: const Color(0xFF64ffda),
+        canvasColor: const Color(0xFF303030),
       ),
       onGenerateRoute: router.generateRoute,
       navigatorKey: locator<NavigationService>().navigationKey,
@@ -41,13 +49,4 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
-
-  // Widget showScreen() {
-  //   var loggedIn = locator<AuthenticationService>().isUserLoggedIn();
-  //   if (loggedIn) {
-  //     return MainView();
-  //   } else {
-  //     return LogInView();
-  //   }
-  // }
 }

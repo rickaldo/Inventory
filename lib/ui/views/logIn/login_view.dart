@@ -31,6 +31,7 @@ class LogInView extends StatelessWidget {
                       "E-Mail",
                       false,
                       model.mailController,
+                      TextInputType.emailAddress,
                     ),
                     SizedBox(
                       height: 10,
@@ -39,6 +40,7 @@ class LogInView extends StatelessWidget {
                       "Password",
                       true,
                       model.passwordController,
+                      TextInputType.text,
                     ),
                     SizedBox(
                       height: 50,

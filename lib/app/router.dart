@@ -1,3 +1,4 @@
+import 'package:ShishaOase/ui/views/addTabacoo/addTabacco_view.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
 
@@ -21,6 +22,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return _getPageRoute(
         routeName: settings.name,
         viewToShow: MainView(),
+      );
+    case addTobaccoView:
+      return _getPageRoute(
+        routeName: settings.name,
+        viewToShow: AddTabaccoView(),
       );
     default:
       return MaterialPageRoute(

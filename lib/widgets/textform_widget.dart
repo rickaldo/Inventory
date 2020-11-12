@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 
-Widget formTextField(
-  String fieldname,
-  bool obscure,
-  TextEditingController controller,
-) {
+Widget formTextField(String fieldname, bool obscure,
+    TextEditingController controller, TextInputType type) {
   return TextFormField(
+    keyboardType: type,
     obscureText: obscure,
     decoration: InputDecoration(
       hintText: fieldname,

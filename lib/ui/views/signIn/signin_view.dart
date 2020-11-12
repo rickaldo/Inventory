@@ -34,6 +34,7 @@ class SignInView extends StatelessWidget {
                         "Displayname",
                         false,
                         model.nameController,
+                        TextInputType.name,
                       ),
                       SizedBox(
                         height: 10,
@@ -42,6 +43,7 @@ class SignInView extends StatelessWidget {
                         "E-Mail",
                         false,
                         model.mailController,
+                        TextInputType.emailAddress,
                       ),
                       SizedBox(
                         height: 10,
@@ -50,6 +52,7 @@ class SignInView extends StatelessWidget {
                         "Password",
                         true,
                         model.passwordController,
+                        TextInputType.text,
                       ),
                       SizedBox(
                         height: 10,
@@ -58,6 +61,7 @@ class SignInView extends StatelessWidget {
                         "Confirm Password",
                         true,
                         model.confrimPasswordController,
+                        TextInputType.text,
                       ),
                       SizedBox(
                         height: 50,

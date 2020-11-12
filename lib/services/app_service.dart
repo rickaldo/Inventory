@@ -1,8 +1,12 @@
+import 'dart:io';
+
 import 'package:ShishaOase/app/locator.dart';
 import 'package:ShishaOase/models/drink.dart';
 import 'package:ShishaOase/models/tobacco.dart';
 import 'package:ShishaOase/models/user.dart';
 import 'package:ShishaOase/services/authentication_service.dart';
+
+import 'package:ShishaOase/services/firestorage_service.dart';
 import 'package:stacked/stacked.dart';
 
 import 'firestore_service.dart';
@@ -11,6 +15,7 @@ class AppService with ReactiveServiceMixin {
   final FirestoreService _fireStoreService = locator<FirestoreService>();
   final AuthenticationService _authenticationService =
       locator<AuthenticationService>();
+  final FireStorageService _fireStorageService = locator<FireStorageService>();
 
   List<User> _userList = List();
   List<User> get getUser => _userList;
@@ -42,7 +47,7 @@ class AppService with ReactiveServiceMixin {
       notifyListeners();
     });
 
-    await Future.delayed(Duration(seconds: 1));
+    await Future.delayed(Duration(seconds: 2));
     return this;
   }
 
@@ -51,5 +56,10 @@ class AppService with ReactiveServiceMixin {
       _fireStoreService
           .activateChangeListener(_authenticationService.getUsersMail());
     }
+  }
+
+  uploadNewTabacco(String name, int amount, String filepath) async {
+    String downloadLink = await _fireStorageService.uploadPicture(filepath);
+    _fireStoreService.addTobacco(name, amount, downloadLink);
   }
 }
