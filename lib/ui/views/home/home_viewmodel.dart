@@ -1,14 +1,22 @@
+import 'package:ShishaOase/app/constants.dart';
 import 'package:ShishaOase/app/locator.dart';
 import 'package:ShishaOase/models/shishakasse.dart';
 import 'package:ShishaOase/models/user.dart';
 import 'package:ShishaOase/services/app_service.dart';
 import 'package:ShishaOase/services/authentication_service.dart';
+import 'package:ShishaOase/services/firestore_service.dart';
+import 'package:ShishaOase/services/navigation_service.dart';
+import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
 class HomeViewModel extends FutureViewModel {
   final AppService _appService = locator<AppService>();
   final AuthenticationService _authenticationService =
       locator<AuthenticationService>();
+  final FirestoreService _firestoreService = locator<FirestoreService>();
+  final NavigationService _navigationService = locator<NavigationService>();
+
+  final ownAmount = TextEditingController();
 
   User _user;
   User get user => _user;
@@ -30,21 +38,38 @@ class HomeViewModel extends FutureViewModel {
     setBusy(false);
   }
 
-  // void _onUserUpdated(List<User> user) {
-  //   userList = user;
+  showAlterDialog(BuildContext context, int amount) {
+    Widget cancelButton = FlatButton(
+      onPressed: () => _navigationService.popBack(),
+      child: Text("Nein"),
+    );
+    Widget continueButton = FlatButton(
+        onPressed: () async => {
+              await _firestoreService.addAmount(
+                _kasse.amount + amount,
+                amount,
+                _user.getUserName,
+              ),
+              _navigationService.popBack(),
+            },
+        child: Text("Ja"));
 
-  //   if (userList == null) {
-  //     setBusy(true);
-  //   } else {
-  //     userList.length == 0 ? print("Ne Alter!") : print("Doch alter");
-  //   }
-  // }
+    AlertDialog alert = AlertDialog(
+      title: Text("Amena Warte"),
+      content: Text("Willste wirklich $amount€ einzahlen?"),
+      actions: [
+        cancelButton,
+        continueButton,
+      ],
+    );
 
-  // getUserBalance() {
-  //   var result = 0;
-  //   _appService.getBalance().then((value) => result = value);
-  //   return result;
-  // }
+    showDialog(
+      context: context,
+      builder: (context) {
+        return alert;
+      },
+    );
+  }
 
   @override
   Future futureToRun() {

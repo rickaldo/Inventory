@@ -25,6 +25,7 @@ void setupLocator() {
   locator.registerLazySingleton(() => SnackbarService());
   locator.registerLazySingleton(() => FireStorageService());
   locator.registerLazySingleton(() => ImagePickerService());
+  locator.registerLazySingleton(() => DialogService());
   locator.registerLazySingleton(() => TabakViewModel());
   locator.registerLazySingleton(() => HomeViewModel());
   locator.registerLazySingleton(() => DrinkViewModel());

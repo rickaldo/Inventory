@@ -1,0 +1,141 @@
+Date : 2020-11-13 00:50:39
+Directory : /Users/ricked-corp/Documents/Projects/ShishaOase
+Total : 62 files,  1994 codes, 127 comments, 252 blanks, all 2373 lines
+
+Languages
++-------------+------------+------------+------------+------------+------------+
+| language    | files      | code       | comment    | blank      | total      |
++-------------+------------+------------+------------+------------+------------+
+| Dart        |         32 |      1,355 |         29 |        173 |      1,557 |
+| XML         |         13 |        248 |         44 |         14 |        306 |
+| JSON        |          4 |        208 |          0 |          3 |        211 |
+| Groovy      |          4 |         88 |          3 |         24 |        115 |
+| Django HTML |          1 |         30 |          0 |          4 |         34 |
+| YAML        |          1 |         26 |         50 |         17 |         93 |
+| Markdown    |          2 |         13 |          0 |          9 |         22 |
+| Swift       |          1 |         12 |          0 |          2 |         14 |
+| Properties  |          2 |          9 |          1 |          2 |         12 |
+| kotlin      |          1 |          4 |          0 |          3 |          7 |
+| C++         |          1 |          1 |          0 |          1 |          2 |
++-------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                            | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                               |         62 |      1,994 |        127 |        252 |      2,373 |
+| android                                                                                                                         |         14 |        203 |         46 |         37 |        286 |
+| android/app                                                                                                                     |          9 |        157 |         45 |         25 |        227 |
+| android/app/src                                                                                                                 |          7 |         66 |         42 |         11 |        119 |
+| android/app/src/debug                                                                                                           |          1 |          4 |          3 |          1 |          8 |
+| android/app/src/main                                                                                                            |          5 |         58 |         36 |          9 |        103 |
+| android/app/src/main/kotlin                                                                                                     |          1 |          4 |          0 |          3 |          7 |
+| android/app/src/main/kotlin/com                                                                                                 |          1 |          4 |          0 |          3 |          7 |
+| android/app/src/main/kotlin/com/example                                                                                         |          1 |          4 |          0 |          3 |          7 |
+| android/app/src/main/kotlin/com/example/ShishaOase                                                                              |          1 |          4 |          0 |          3 |          7 |
+| android/app/src/main/res                                                                                                        |          3 |         22 |         25 |          4 |         51 |
+| android/app/src/main/res/drawable                                                                                               |          1 |          4 |          7 |          2 |         13 |
+| android/app/src/main/res/values                                                                                                 |          1 |          9 |          9 |          1 |         19 |
+| android/app/src/main/res/values-night                                                                                           |          1 |          9 |          9 |          1 |         19 |
+| android/app/src/profile                                                                                                         |          1 |          4 |          3 |          1 |          8 |
+| android/gradle                                                                                                                  |          1 |          5 |          1 |          1 |          7 |
+| android/gradle/wrapper                                                                                                          |          1 |          5 |          1 |          1 |          7 |
+| ios                                                                                                                             |         12 |        347 |          2 |         13 |        362 |
+| ios/Flutter                                                                                                                     |          1 |         26 |          0 |          1 |         27 |
+| ios/Runner                                                                                                                      |          9 |        305 |          2 |         10 |        317 |
+| ios/Runner.xcodeproj                                                                                                            |          1 |          8 |          0 |          1 |          9 |
+| ios/Runner.xcodeproj/project.xcworkspace                                                                                        |          1 |          8 |          0 |          1 |          9 |
+| ios/Runner.xcodeproj/project.xcworkspace/xcshareddata                                                                           |          1 |          8 |          0 |          1 |          9 |
+| ios/Runner.xcworkspace                                                                                                          |          1 |          8 |          0 |          1 |          9 |
+| ios/Runner.xcworkspace/xcshareddata                                                                                             |          1 |          8 |          0 |          1 |          9 |
+| ios/Runner/Assets.xcassets                                                                                                      |          3 |        148 |          0 |          4 |        152 |
+| ios/Runner/Assets.xcassets/AppIcon.appiconset                                                                                   |          1 |        122 |          0 |          1 |        123 |
+| ios/Runner/Assets.xcassets/LaunchImage.imageset                                                                                 |          2 |         26 |          0 |          3 |         29 |
+| ios/Runner/Base.lproj                                                                                                           |          2 |         61 |          2 |          2 |         65 |
+| lib                                                                                                                             |         31 |      1,341 |         19 |        166 |      1,526 |
+| lib/app                                                                                                                         |          3 |         84 |          1 |         10 |         95 |
+| lib/models                                                                                                                      |          4 |         55 |          0 |         16 |         71 |
+| lib/services                                                                                                                    |          6 |        241 |          0 |         47 |        288 |
+| lib/ui                                                                                                                          |         16 |        894 |         18 |         87 |        999 |
+| lib/ui/views                                                                                                                    |         16 |        894 |         18 |         87 |        999 |
+| lib/ui/views/addDrink                                                                                                           |          2 |        102 |          0 |         12 |        114 |
+| lib/ui/views/addTabacoo                                                                                                         |          2 |        102 |          0 |         12 |        114 |
+| lib/ui/views/drinklist                                                                                                          |          2 |        143 |          1 |         13 |        157 |
+| lib/ui/views/home                                                                                                               |          2 |         64 |         16 |         14 |         94 |
+| lib/ui/views/logIn                                                                                                              |          2 |        106 |          0 |          9 |        115 |
+| lib/ui/views/main                                                                                                               |          2 |         85 |          0 |          6 |         91 |
+| lib/ui/views/signIn                                                                                                             |          2 |        149 |          0 |          9 |        158 |
+| lib/ui/views/tabakliste                                                                                                         |          2 |        143 |          1 |         12 |        156 |
+| lib/widgets                                                                                                                     |          1 |         18 |          0 |          2 |         20 |
+| test                                                                                                                            |          1 |         14 |         10 |          7 |         31 |
+| web                                                                                                                             |          2 |         53 |          0 |          5 |         58 |
++---------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------------------------+-------------+------------+------------+------------+------------+
+| filename                                                                                                                        | language    | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------------+-------------+------------+------------+------------+------------+
+| /Users/ricked-corp/Documents/Projects/ShishaOase/README.md                                                                      | Markdown    |         10 |          0 |          7 |         17 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/android/app/build.gradle                                                       | Groovy      |         51 |          3 |         14 |         68 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/android/app/google-services.json                                               | JSON        |         40 |          0 |          0 |         40 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/android/app/src/debug/AndroidManifest.xml                                      | XML         |          4 |          3 |          1 |          8 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/android/app/src/main/AndroidManifest.xml                                       | XML         |         32 |         11 |          2 |         45 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/android/app/src/main/kotlin/com/example/ShishaOase/MainActivity.kt             | kotlin      |          4 |          0 |          3 |          7 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/android/app/src/main/res/drawable/launch_background.xml                        | XML         |          4 |          7 |          2 |         13 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/android/app/src/main/res/values-night/styles.xml                               | XML         |          9 |          9 |          1 |         19 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/android/app/src/main/res/values/styles.xml                                     | XML         |          9 |          9 |          1 |         19 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/android/app/src/profile/AndroidManifest.xml                                    | XML         |          4 |          3 |          1 |          8 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/android/build.gradle                                                           | Groovy      |         28 |          0 |          5 |         33 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/android/gradle.properties                                                      | Properties  |          4 |          0 |          1 |          5 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/android/gradle/wrapper/gradle-wrapper.properties                               | Properties  |          5 |          1 |          1 |          7 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/android/settings.gradle                                                        | Groovy      |          8 |          0 |          4 |         12 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/android/settings_aar.gradle                                                    | Groovy      |          1 |          0 |          1 |          2 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/ios/Flutter/AppFrameworkInfo.plist                                             | XML         |         26 |          0 |          1 |         27 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist | XML         |          8 |          0 |          1 |          9 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist                   | XML         |          8 |          0 |          1 |          9 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/ios/Runner/AppDelegate.swift                                                   | Swift       |         12 |          0 |          2 |         14 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json                    | JSON        |        122 |          0 |          1 |        123 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json                  | JSON        |         23 |          0 |          1 |         24 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md                      | Markdown    |          3 |          0 |          2 |          5 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/ios/Runner/Base.lproj/LaunchScreen.storyboard                                  | XML         |         36 |          1 |          1 |         38 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/ios/Runner/Base.lproj/Main.storyboard                                          | XML         |         25 |          1 |          1 |         27 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/ios/Runner/GoogleService-Info.plist                                            | XML         |         36 |          0 |          0 |         36 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/ios/Runner/Info.plist                                                          | XML         |         47 |          0 |          1 |         48 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/ios/Runner/Runner-Bridging-Header.h                                            | C++         |          1 |          0 |          1 |          2 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/app/constants.dart                                                         | Dart        |          6 |          1 |          2 |          9 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/app/locator.dart                                                           | Dart        |         28 |          0 |          4 |         32 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/app/router.dart                                                            | Dart        |         50 |          0 |          4 |         54 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/main.dart                                                                  | Dart        |         49 |          0 |          4 |         53 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/models/drink.dart                                                          | Dart        |         16 |          0 |          4 |         20 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/models/shishakasse.dart                                                    | Dart        |          7 |          0 |          4 |         11 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/models/tobacco.dart                                                        | Dart        |         19 |          0 |          4 |         23 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/models/user.dart                                                           | Dart        |         13 |          0 |          4 |         17 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/services/app_service.dart                                                  | Dart        |         63 |          0 |         16 |         79 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/services/authentication_service.dart                                       | Dart        |         47 |          0 |          7 |         54 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/services/firestorage_service.dart                                          | Dart        |         17 |          0 |          5 |         22 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/services/firestore_service.dart                                            | Dart        |         86 |          0 |         12 |         98 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/services/imagepicker_service.dart                                          | Dart        |         11 |          0 |          2 |         13 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/services/navigation_service.dart                                           | Dart        |         17 |          0 |          5 |         22 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/addDrink/addDrink_view.dart                                       | Dart        |         70 |          0 |          3 |         73 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/addDrink/addDrink_viewmodel.dart                                  | Dart        |         32 |          0 |          9 |         41 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/addTabacoo/addTabacco_view.dart                                   | Dart        |         70 |          0 |          3 |         73 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/addTabacoo/addTabacco_viewmodel.dart                              | Dart        |         32 |          0 |          9 |         41 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/drinklist/drink_view.dart                                         | Dart        |        102 |          1 |          5 |        108 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/drinklist/drink_viewmodel.dart                                    | Dart        |         41 |          0 |          8 |         49 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/home/home_view.dart                                               | Dart        |         33 |          3 |          4 |         40 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/home/home_viewmodel.dart                                          | Dart        |         31 |         13 |         10 |         54 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/logIn/login_view.dart                                             | Dart        |         76 |          0 |          3 |         79 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/logIn/login_viewmodel.dart                                        | Dart        |         30 |          0 |          6 |         36 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/main/main_view.dart                                               | Dart        |         71 |          0 |          3 |         74 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/main/main_viewmodel.dart                                          | Dart        |         14 |          0 |          3 |         17 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/signIn/signin_view.dart                                           | Dart        |         97 |          0 |          3 |        100 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/signIn/signin_viewmodel.dart                                      | Dart        |         52 |          0 |          6 |         58 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/tabakliste/tabak_view.dart                                        | Dart        |        102 |          1 |          4 |        107 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/ui/views/tabakliste/tabak_viewmodel.dart                                   | Dart        |         41 |          0 |          8 |         49 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/lib/widgets/textform_widget.dart                                               | Dart        |         18 |          0 |          2 |         20 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/pubspec.yaml                                                                   | YAML        |         26 |         50 |         17 |         93 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/test/widget_test.dart                                                          | Dart        |         14 |         10 |          7 |         31 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/web/index.html                                                                 | Django HTML |         30 |          0 |          4 |         34 |
+| /Users/ricked-corp/Documents/Projects/ShishaOase/web/manifest.json                                                              | JSON        |         23 |          0 |          1 |         24 |
+| Total                                                                                                                           |             |      1,994 |        127 |        252 |      2,373 |
++---------------------------------------------------------------------------------------------------------------------------------+-------------+------------+------------+------------+------------+

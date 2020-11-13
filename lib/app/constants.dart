@@ -6,3 +6,5 @@ const String signInView = "/signInView";
 const String mainView = "/mainView";
 const String addTobaccoView = "/addTobaccoView";
 const String addDrinkView = "/addDrinkView";
+
+enum DialogType { base, form }

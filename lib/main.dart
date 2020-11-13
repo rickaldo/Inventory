@@ -1,6 +1,7 @@
 import 'package:ShishaOase/app/locator.dart';
 import 'package:ShishaOase/services/authentication_service.dart';
 import 'package:ShishaOase/services/navigation_service.dart';
+
 import 'package:ShishaOase/ui/views/main/main_view.dart';
 import 'package:ShishaOase/ui/views/signIn/signin_view.dart';
 

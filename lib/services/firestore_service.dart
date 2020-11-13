@@ -94,4 +94,12 @@ class FirestoreService {
       drink.doc(docId).update({'amount': amount});
     }
   }
+
+  addAmount(int amount, int beitrag, String user) {
+    CollectionReference kasse = firestore.collection('shishakasse');
+    CollectionReference paid = firestore.collection('paid');
+
+    kasse.doc("kasse").update({'amount': amount});
+    paid.add({'username': user, 'amount': beitrag, 'date': DateTime.now()});
+  }
 }
